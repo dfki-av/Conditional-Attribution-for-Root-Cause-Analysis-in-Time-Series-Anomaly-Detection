@@ -1,7 +1,7 @@
 # Conditional Attribution for Root Cause Analysis in Time-Series Anomaly Detection
 
 <p align="center">
-  <img src="assets/teaser.png" width="900">
+  <img src="assets/teaser_condattr.png" width="900">
 </p>
 
 <p align="center">
