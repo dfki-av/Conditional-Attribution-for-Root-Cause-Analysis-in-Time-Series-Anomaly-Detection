@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://arxiv.org/abs/2604.17616"><img src="https://img.shields.io/badge/ECML--PKDD-2025-blue"></a>
+  <a href="https://arxiv.org/abs/2604.17616"><img src="https://img.shields.io/badge/ECML--PKDD-2026-blue"></a>
   <a href="#"><img src="https://img.shields.io/badge/Status-Code%20Coming%20Soon-orange"></a>
   <a href="#"><img src="https://img.shields.io/badge/Python-3.10+-green"></a>
 </p>
