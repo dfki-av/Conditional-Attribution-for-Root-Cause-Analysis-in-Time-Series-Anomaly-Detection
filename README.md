@@ -45,7 +45,7 @@ Instead of generating unrealistic counterfactuals, CondAttr retrieves representa
 ## 🏗️ Architecture
 
 <p align="center">
-  <img src="assets/architecture.png" width="900">
+  <img src="assets/cond_Attr_arch.png" width="900">
 </p>
 
 ### Pipeline
