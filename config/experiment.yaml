@@ -1,0 +1,54 @@
+paths:
+  normal_csv: data/processed/SWAT_Non_Attack_Instances.csv  # Normal sensor rows
+  anomaly_csv_dir: data/processed/SWAT_Attacks  # Isolated attack CSVs
+  checkpoint_dir: null  # Existing model checkpoint
+
+
+dataset:
+  name: swat_train_dist2_ws50  # Output dataset name
+  validation_fraction: 0.1  # Validation window fraction
+  window_size: 50  # Rows per window
+  stride: 50  # Window step size
+  normalization_method: min_max  # Scaling method
+  mask_variable_names: true  # Use CSV headers
+
+model:
+  name: TemporalVAE  # Model architecture
+  max_epochs: 300  # Maximum training epochs
+  parameters:
+    latent_dim: 8  # Latent dimension
+    hidden_layer_sizes: [50, 100, 200]  # Encoder convolution widths
+    reconstruction_wt: 3.0  # Reconstruction loss weight
+    batch_size: 512  # Training batch size
+    use_residual_conn: true  # Decoder residual connection
+    trend_poly: 0  # Polynomial trend degree
+    custom_seas: null  # Custom seasonal components
+
+training:
+  enabled: true  # Train new model
+
+evaluation:
+  attack_sensors_dataset: swat  # Attack sensor labels
+
+experiment:
+  knn_mode: vae  # Support retrieval mode
+  support_size: 3  # Support window count
+  umap:
+    n_neighbors: 30  # UMAP neighbor count
+    n_components: 10  # UMAP embedding dimensions
+    min_dist: 0.1  # UMAP minimum distance
+
+random_seeds:
+  global: 42  # Experiment random seed
+  split: 123  # Validation split seed
+  umap: 42  # UMAP random seed
+  deterministic: true  # Deterministic PyTorch operations
+
+runtime:
+  device: auto  # Compute device selection
+  faiss_gpu_id: null  # Optional FAISS GPU
+  print_inference_time: false  # Show inference timings
+
+outputs:
+  output_dir: outputs  # Generated results directory
+  checkpoint_subdirectory: checkpoints  # New checkpoint directory

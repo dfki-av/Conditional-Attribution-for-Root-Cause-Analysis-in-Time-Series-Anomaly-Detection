@@ -6,7 +6,6 @@
 
 <p align="center">
   <a href="https://arxiv.org/abs/2604.17616"><img src="https://img.shields.io/badge/ECML--PKDD-2026-blue"></a>
-  <a href="#"><img src="https://img.shields.io/badge/Status-Code%20Coming%20Soon-orange"></a>
   <a href="#"><img src="https://img.shields.io/badge/Python-3.10+-green"></a>
 </p>
 
@@ -259,21 +258,20 @@ Metrics include:
 
 ---
 
-## 📦 Code Release Status
+## ⚙️ Run the Code
 
-The paper has been accepted at **ECML-PKDD 2026**.
+```bash
+bash installation.sh
+mkdir -p data/raw/swat
+cp /path/to/SWaT_Dataset_Attack_v0.xlsx data/raw/swat/SWaT_Dataset_Attack_v0.xlsx
+bash run_experiment.sh
+```
 
-We are currently cleaning and documenting the codebase.
+## ✅ To Do
 
-The following will be released soon:
-
-* Source code
-* Trained models
-* Reproducibility scripts
-* Evaluation pipeline
-* Benchmark configurations
-
-Stay tuned!
+- [x] Release Source Code
+- [x] Release Preprocessing Script
+- [ ] Release Pretrained Model
 
 ---
 
