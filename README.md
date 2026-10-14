@@ -292,14 +292,13 @@ For questions, collaborations, or early access to the code and pretrained models
 If you find this work useful in your research, please cite:
 
 ```bibtex
-@misc{mishra2026conditionalattributionrootcause,
-      title={Conditional Attribution for Root Cause Analysis in Time-Series Anomaly Detection}, 
-      author={Shashank Mishra and Karan Patil and Cedric Schockaert and Didier Stricker and Jason Rambach},
-      year={2026},
-      eprint={2604.17616},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2604.17616}, 
+@inproceedings{mishra2026conditional,
+  title={Conditional Attribution for Root Cause Analysis in Time-Series Anomaly Detection},
+  author={Mishra, Shashank and Patil, Karan and Schockaert, Cedric and Stricker, Didier and Rambach, Jason},
+  booktitle={Joint European Conference on Machine Learning and Knowledge Discovery in Databases},
+  pages={165--181},
+  year={2026},
+  organization={Springer}
 }
 ```
 
